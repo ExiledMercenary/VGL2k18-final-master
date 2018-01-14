@@ -123,27 +123,27 @@
                                         <center>
                                         <form id="contactform" enctype="multipart/form-data" action="1.php" method="POST">
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" name="name" type="text" placeholder="First Name" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="name" required type="text" placeholder="First Name" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" name="lname" type="text" placeholder="Last Name" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="lname" required type="text" placeholder="Last Name" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" name="email" type="email" placeholder="Email Address" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="email"  required type="email" placeholder="Email Address" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" name="phno" type="number" placeholder="Phone Number" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="phno" required type="number" placeholder="Phone Number" size="10" minlength="10" maxlength="10" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><textarea class="w3-input w3-hover-black" name="mesg" placeholder="Type your message here..." style="width:85%; height:30%"></textarea></p>
+                                                <p><textarea class="w3-input w3-hover-black" name="mesg" required placeholder="Type your message here..." style="width:85%; height:30%"></textarea></p>
                                             </div>
                                             <br>
                                             <div id="sendphone">
-                                                <p><button type="submit" id="send" name="submit" class="w3-button w3-block  w3-ripple">Send</button></p>
+                                                <p><button type="submit" id="send" name="submit" required class="w3-button w3-block  w3-ripple">Send</button></p>
                                             </div>
                                     </form>
                                     </center>
