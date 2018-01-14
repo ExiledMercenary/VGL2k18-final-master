@@ -1,4 +1,7 @@
-<?php 
+<html style = "background-color:#363636"> 
+</html>
+<?php
+
     $conn = new mysqli("localhost", "root", "root","vgl");
 
     if ($conn->connect_error) {
@@ -15,9 +18,9 @@
         if (preg_match("/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+.[a-zA-Z.]{2,5}$/", $email)&&preg_match("/^[a-zA-Z]/", $name)&&preg_match("/^[a-zA-Z]/", $lname)&&preg_match("/^[a-zA-Z]/", $mesg)&&preg_match("/^[0-9]/", $phno)) {
             $query = "INSERT INTO vgl_database18(`Name`, `Lname`, `email`, `Phno`, `mesg`) VALUES ('$name','$lname','$email','$phno','$mesg')";
             if ($conn->query($query) === TRUE) {
-                echo "Message Delivered Successfully";
+               // echo "Message Delivered Successfully";
             } else {
-                echo "Error: " . $query . "<br>" . $conn->error;
+               // echo "Error: " . $query . "<br>" . $conn->error;
             }
             
             $conn->close();
@@ -25,6 +28,8 @@
     }
     else 
     {
-        echo "<br> Button Not Pressed";
+       // echo "<br> Button Not Pressed";
     }
+    header('Refresh: 0; URL=contact.html');
+    //header('Location: contact.html');
 ?>
