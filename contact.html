@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105678891-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-105678891-4');
-</script>
     <meta charset="UTF-8">
     <meta name="author" content="Technology and Gaming Club (T.A.G Club)">
     <meta name="viewport" content="width= device-width, initial-scale= 1.0">
@@ -28,6 +19,24 @@
     <!-- JS Links -->
     <script type="text/javascript" src="js/mainScript.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <!-- Sidebar Section -->
@@ -42,7 +51,7 @@
             <i class="fa fa-hourglass-o fa-3x" aria-hidden="true"></i>
             <p>TIMELINE</p>
         </a>
-        <a href="games.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black navSideBtn">
+        <a href="games.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black navSideBtn active">
             <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
             <p>GAMES</p>
         </a>
@@ -62,7 +71,7 @@
             <i class="fa fa-television fa-3x" aria-hidden="true"></i>
             <p>LIVE STREAM</p>
         </a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black navSideBtn active">
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black navSideBtn">
             <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
             <p>CONTACT US</p>
         </a>
@@ -72,10 +81,10 @@
         </a>
     </nav>
     <!-- Navbar on Small Screens-->
-    <div class="w3-bar w3-black w3-large">
+    <div class="w3-bar w3-black w3-large w3-top-fixed">
         <button href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="sideNavOpen()">&#9776;</button>
     </div>
-    <div class="w3-sidebar w3-bar-block w3-animate-left w3-left w3-black sideNav  w3-top" id="sideNav">
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-left w3-black sideNav w3-top" id="sideNav">
         <center> <img class="logo" src="img/gt.png" alt="VGL Logo"> </center>
         <a href="index.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
             <i class="fa fa-home fa-2x" aria-hidden="true"></i> HOME
@@ -83,7 +92,7 @@
         <a href="timeline.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
             <i class="fa fa-hourglass-o fa-2x" aria-hidden="true"></i> TIMELINE
         </a>
-        <a href="games.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
+        <a href="games.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn active">
             <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> GAMES
         </a>
         <a href="https://goo.gl/forms/3C4F64CkhF2SEXLB2" target="_blank" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
@@ -98,15 +107,14 @@
         <a href="LiveStream.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn w3-hide">
             <i class="fa fa-television fa-2x" aria-hidden="true"></i> LIVE STREAM
         </a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn active">
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
             <i class="fa fa-phone fa-2x" aria-hidden="true"></i> CONTACT US
         </a>
-        <a href="sponsors.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn">
+        <a href="sponsors.html" class="w3-bar-item w3-button w3-padding w3-hover-black navSideBtn active">
             <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i> SPONSORS
         </a>
         <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sideNavClose()">Close &#9776;</button>
     </div>
-
     
     <div class="" id="main">
         <div class="w3-container w3-center">
@@ -121,29 +129,29 @@
                                 <div class="w3-quarter w3-container"></div>
                                     <div class="w3-threequarter w3-container">
                                         <center>
-                                        <form id="contactform" enctype="multipart/form-data" action="POST">
+                                        <form id="contactform" enctype="multipart/form-data" target="_blank" action="1.php" method="POST">
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" type="text" placeholder="First Name" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="name" type="text" placeholder="First Name" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" type="text" placeholder="Last Name" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="lname" type="text" placeholder="Last Name" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" type="email" placeholder="Email Address" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="email" type="email" placeholder="Email Address" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><input class="w3-input w3-hover-black" type="number" placeholder="Phone Number" style="width:85%"></p>
+                                                <p><input class="w3-input w3-hover-black" name="phno" type="number" placeholder="Phone Number" style="width:85%"></p>
                                             </div>
                                             <br>
                                             <div class="w3-container">
-                                                <p><textarea class="w3-input w3-hover-black" placeholder="Type your message here..." style="width:85%; height:30%"></textarea></p>
+                                                <p><textarea class="w3-input w3-hover-black" name="mesg" placeholder="Type your message here..." style="width:85%; height:30%"></textarea></p>
                                             </div>
                                             <br>
                                             <div id="sendphone">
-                                                <p><button id="send" class="w3-button w3-block  w3-ripple">SEND</button></p>
+                                                <p><button type="submit" id="send" name="submit" class="w3-button w3-block  w3-ripple">Send</button></p>
                                             </div>
                                     </form>
                                     </center>
@@ -152,7 +160,7 @@
                         </div>
                         <div class="w3-half w3-container w3-center">
                             
-                            <div class="w3-row w3-hide-small" id="cicons">
+                            <div class="w3-row" id="cicons">
                                 <div class="w3-threequarter w3-container">
                                     <p><div><a href="tel:+91-9786000131"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp; +91-9786000131</a></div>
                                     <br>
@@ -160,28 +168,16 @@
                                     <br>
                                     <p><div><a href="#"><i class="fa fa-android fa-2x"></i>&nbsp;&nbsp; official VGL'18 App</a></div>
                                     <br>
-                                    <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i>&nbsp;&nbsp; VIT, Vellore - 632014.</a></div>
+                                    <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i>&nbsp;&nbsp; VIT University, Vellore - 632014.</a></div>
                                     <br>
                                 </div> 
                             </div>
-                            
-                            <div class="w3-container w3-hide-medium w3-hide-large" id="ciconssm">
-                                    <p><div><a href="tel:+91-9786000131"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp; +91-9786000131</a></div>
-                                    <br>
-                                    <p><div><a href="mailto:tag.vitu@gmail.com?Subject=Website Contact" target="_top"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp; tagclub.vitu@gmail.com</a></div>
-                                    <br>
-                                    <p><div><a href="#"><i class="fa fa-android fa-2x"></i>&nbsp;&nbsp; official VGL'18 App</a></div>
-                                    <br>
-                                    <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i>&nbsp;&nbsp; VIT, Vellore - 632014.</a></div>
-                                    <br>
-                            </div> 
                             <div class="w3-row" id="conicons">
                                 <div class="w3-threequarter w3-container w3-hide-small">
-                                    <p><div class="w3-container w3-third"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div></p>
+                                    <p><div class="w3-container w3-third"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
                                     <p><div class="w3-third w3-container"><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
                                     <p><div class="w3-third w3-container"><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
                                 </div> 
-                            </div>
                                 <div class="w3-hide-large w3-hide-medium" id="conicons2" >
                                     <div class="w3-row" >
                                     <p><div class="w3-col s4"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
@@ -193,26 +189,6 @@
                         </div>
                     </div>
                 </div>
-                <?php 
-                                            $con=mysql_connect("localhost", "root", "") or die("mysql connection is failure.");
-                                            mysql_select_db("vgl") or die("Database does not exists.");
-                                            
-                                            if (isset($_POST['button']))
-                                            {
-                                            $name=$_POST['name'];
-                                            $lname=$_POST['lname'];
-                                            $email=$_POST['email'];
-                                            $phno=$_POST['phno'];
-                                            $mesg=$_POST['mesg'];
-                                            if (preg_match("/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+.[a-zA-Z.]{2,5}$/", $email)&&preg_match("/^[a-zA-Z]/", $name)&&preg_match("/^[a-zA-Z]/", $lname)&&preg_match("/^[a-zA-Z]/", $mesg)&&preg_match("/^[0-9]/", $phno)) {
-                                                $query = "INSERT INTO `vgl_database18`(`Name`, `Lname`, `email`, `Phno`, `mesg`) VALUES ('$name','$lname','$email','$phno','$mesg')";
-                                                if (mysql_query($query)or die(mysql_error()))
-                                                {
-                                                    
-                                                }
-                                            }
-                                        }
-                                            ?>
             <!--
                 <center>
                 <form id="contactform" enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF'];?>">

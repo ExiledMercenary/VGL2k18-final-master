@@ -1,0 +1,57 @@
+html{
+    background: url("../img/background.png");
+    max-height: 95vh;
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0;} html{max-height: 100%;}}
+
+/*Navbar Styling*/
+.logo{
+    width : 100%;
+    opacity: 0.7;
+}
+.navSideBtn:hover{
+    border-right: solid;
+    border-right-color: #ffc107 ;
+}
+.active{
+    background: black;
+}
+.sideNav{
+    display: none;
+    width: 80vw;
+    overflow: scroll;
+}
+#logoTAG{
+    height: 5vh;
+    padding: 2px;
+}
+/* Content Section */
+.contentSection{
+}
+#banner1, #banner2{
+    height: 100%;
+}
+#banner1{
+    background: url("../img/landSide1.jpg");
+}
+#banner2{
+    background: url("../img/landSide2.jpg");
+}
+/* Footer*/
+footer{
+    background: #222222;
+    border-top: solid;
+    border-top-color: #ffc107;
+}
+
+/*General */
+::-webkit-scrollbar{
+    width: 1vw;
+    background: #ffc107;
+}
